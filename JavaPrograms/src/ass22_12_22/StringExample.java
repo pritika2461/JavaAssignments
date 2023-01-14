@@ -1,4 +1,4 @@
-package assignments;
+package ass22_12_22;
 
 import java.util.Scanner;
 
