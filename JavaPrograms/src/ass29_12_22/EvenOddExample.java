@@ -7,27 +7,28 @@ public class EvenOddExample {
 
 	public static void main(String[] args) 
 	{
+		
 		MyThread t = new MyThread();
         t.start();
-        if(num%2==0)
-        {
-        	System.out.println("Even Number..");
-        }
-        else {
-        	System.out.println("Odd number...");
-        }
+        
 	}
 
 }
-class MyThread extends Thread
+class MyThread extends Thread 
 {
-	public 
-	int num;
-	public void run()
-	{
+	   public void run()
+	   {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Number : ");
-		num = sc.nextInt();
+		int num = sc.nextInt();
 		
+		if(num%2==0)
+        {
+        	System.out.println("Even Number..");
+        }
+        else 
+        {
+        	System.out.println("Odd number...");
+        }
 	}
 }

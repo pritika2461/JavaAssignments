@@ -1,4 +1,4 @@
-/* WAP to take a input of age from the user if the 
+/* WAP to take a input of age from the user if the   
  * age is above 18 then print "You are eligible for the vote" 
 else throw and exception is "age is not correct".*/
 
@@ -18,9 +18,11 @@ public class VotingExample {
 		{
 			System.out.println("You are Eligible for the vote");
 		}
-		else {
-			System.out.println("Age is not correct..");
+		else
+		{
+			throw new ArithmeticException("Age is not correct");
 		}
+		
 	}
 
 }
